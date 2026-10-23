@@ -29,7 +29,7 @@ body {
     box-shadow: 0 3px 10px #2634490b;
 }
 
-.main-card h5, .result-card h5 {
+.main-card h4, .result-card h5 {
     font-weight: bold;
     margin-bottom: 18px;
 }
