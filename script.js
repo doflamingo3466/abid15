@@ -40,7 +40,7 @@ document.getElementById("resultForm").onsubmit = (e) => {
     let total = 500,
         obtained = a + b + c + d + f,
         percentage = obtained / total * 100,
-        grade, status ;
+        grade, status = "Pass";
 
     if (percentage >= 90) grade = "A+";
     else if (percentage >= 85) grade = "A";
