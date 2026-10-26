@@ -11,19 +11,6 @@ document.getElementById("resultForm").onsubmit = (e) => {
         msg = document.getElementById("message"),
         result = document.getElementById("result");
 
-    if (!name || [a, b, c, d, f].some(m => Number.isNaN(m))) {
-        msg.innerText = "Please fill all fields!";
-        result.innerHTML = "";
-        return;
-    }
-
-    if (a < 0 || a > 100 || b < 0 || b > 100 ||
-        c < 0 || c > 100 || d < 0 || d > 100 || f < 0 || f > 100) {
-        msg.innerText = "Marks must be between 0 and 100!";
-        result.innerHTML = "";
-        return;
-    }
-
     let total = 500,
         obtained = a + b + c + d + f,
         percentage = obtained / total * 100,
@@ -43,7 +30,129 @@ document.getElementById("resultForm").onsubmit = (e) => {
         <p>Name: ${name}</p>
         <p>Total Marks: ${total}</p>
         <p>Obtained Marks: ${obtained}</p>
-        <p>Percentage: ${percentage.toFixed(2)}%</p>
+        <p>Percentage: ${percentage.toFixed(5)}%</p>
         <p>Grade: ${grade}</p>
         <p>Status: ${status}</p>`;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*if (a < 0 || a > 100 || b < 0 || b > 100 ||
+        c < 0 || c > 100 || d < 0 || d > 100 || f < 0 || f > 100) {
+        msg.innerText = "Marks must be between 0 and 100!";
+        result.innerHTML = "";
+        return;
+    }
+    
+    if (!name || [a, b, c, d, f].some(m => Number.isNaN(m))) {
+        msg.innerText = "Please fill all fields!";
+        result.innerHTML = "";
+        return;
+    }
+    
+    */
