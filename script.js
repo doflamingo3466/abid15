@@ -16,10 +16,14 @@ document.getElementById("resultForm").onsubmit = (e) => {
         percentage = obtained / total * 100,
         grade, status = "Pass";
 
-    if (percentage >= 80) grade = "A";
-    else if (percentage >= 70) grade = "B";
-    else if (percentage >= 60) grade = "C";
-    else if (percentage >= 50) grade = "D";
+    if (percentage >= 90) grade = "A+";
+    else if (percentage >= 85) grade = "A";
+    else if (percentage >= 80) grade = "B+";
+    else if (percentage >= 75) grade = "B";
+    else if (percentage >= 70) grade = "C+";
+    else if (percentage >= 65) grade = "C";
+    else if (percentage >= 55) grade = "D+";
+    else if (percentage > 40) grade = "D";
     else grade = "F";
 
     if (a < 40 || b < 40 || c < 40 || d < 40 || f < 40)
@@ -30,7 +34,7 @@ document.getElementById("resultForm").onsubmit = (e) => {
         <p>Name: ${name}</p>
         <p>Total Marks: ${total}</p>
         <p>Obtained Marks: ${obtained}</p>
-        <p>Percentage: ${percentage.toFixed(5)}%</p>
+        <p>Percentage: ${percentage.toFixed(1)}%</p>
         <p>Grade: ${grade}</p>
         <p>Status: ${status}</p>`;
 };
